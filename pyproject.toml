@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "git-configfmt"
+version = "0.1.0"
+description = ""
+authors = ["Adam Hitchcock <adam+python@northisup.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tree-sitter = '*'
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+git-configfmt = "git_configfmt.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
